@@ -11,7 +11,7 @@ body{
 }
 nav{
     display: flex;
-    background-color: lightskyblue;
+    background-color: chocolate;
     align-items: flex-end;
     font-size: 25px;
     padding: 30px;
@@ -22,6 +22,13 @@ a{
     padding: 9px;
     border-radius: 30px;
     margin: 50px;
+}
+.grid{
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+    background-color: chocolate;
+    align-content: center;
+    padding: 20px;
 }
 
 
