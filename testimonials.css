@@ -1,0 +1,20 @@
+body {
+    background-color: antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    padding: 25px;
+    text-align: center;
+    background-color: white;
+}
+
+.header h1 {
+    font-size: 40px;
+    color: brown;
+}
+p {
+    font-size: 25px;
+    color: black;
+}
+
