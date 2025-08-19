@@ -7,7 +7,7 @@
         float: right;
         border: 1px solid #ddd;
         border-radius: 5px;
-        padding: 5px;
+        margin-left: 5px;
         width: 150px;
         }
 }
@@ -21,12 +21,13 @@
         float: left;
         border: 1px solid #ddd;
         border-radius: 5px;
-        padding: 5px;
+        margin-right: 5px;
         width: 200px;
         }
 }
 
 h2 {
     font-size: x-large;
+    font-family:'Courier New', Courier, monospace;
 }
 
