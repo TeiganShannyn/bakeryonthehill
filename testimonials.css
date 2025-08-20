@@ -1,10 +1,33 @@
 .quote {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: large;
-    padding: 15px;
+    font-family:'Courier New', Courier, monospace;
+    font-size: medium;
+    padding: 25px;
     font-style: italic;
+        img {
+        float: right;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        margin-left: 5px;
+        width: 150px;
+        }
+}
+
+.quote2 {
+    font-family:'Courier New', Courier, monospace;
+    font-size: large;
+    padding: 25px;
+    font-style: italic;
+        img {
+        float: left;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        margin-right: 5px;
+        width: 200px;
+        }
 }
 
 h2 {
     font-size: x-large;
+    font-family:'Courier New', Courier, monospace;
 }
+
