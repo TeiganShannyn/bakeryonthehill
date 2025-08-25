@@ -3,19 +3,19 @@ header{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 800px;
+    height: 900px;
 }
 
 h1{
     color: brown;
     text-align: center;
     padding-top: 200px;
-    font-size: 50px;
-    
+    font-size: 150px;
 }
-
+    
 .quote1 {
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
     font-size: large;
     padding: 25px;
     font-style: italic;
@@ -35,7 +35,7 @@ img{
 
 div.bake-image-container {
     text-align: center;
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 p{
@@ -46,7 +46,7 @@ p{
 }
  
 h2{
-    color: brown;
+    color: black;
     text-align: center;
     font-size: 30px;
 }
@@ -70,8 +70,12 @@ h3{
     border-radius: 12px;
 }
 
-.button:hover {
-    background-color: darkred;
+.leftcolumn {
+    flex: 0 0 48.5%;
+    margin-top: 10px;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
 }
 .footer {
     height: 120px;
@@ -79,6 +83,20 @@ h3{
     box-sizing: border-box;
     text-align: center;
     background-color: rgb(145, 82, 6);
-    margin-top: 0;
+    margin-top: 20px;
+    color: white;
+}
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
+div.bake-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
