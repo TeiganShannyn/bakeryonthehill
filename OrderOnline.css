@@ -1,5 +1,14 @@
 
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    background-color: lightskyblue;
+}
+.grid > div {
+    text-align: right;
+}
+.one {
+    grid-column-start: right;
+    grid-column-end: right;
 
-
-
-
+}
