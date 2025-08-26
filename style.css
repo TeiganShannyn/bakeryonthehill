@@ -35,12 +35,12 @@ body {
 }
 
 .header a {
-    position: relative;
+    position: absolute;
     font-size: 22px;
     font-style: oblique;
     color: rgb(240, 197, 140);
     font-weight: bold;
-    top: 95px;
+    top: 380px;
 }
 
 .header button {
@@ -106,8 +106,9 @@ body {
 .leftcolumn {
     flex: 0 0 50%;
     margin-top: 10px;
+    margin-left: 15px;
     display: flex;
-    flex-direction: column;
+   
 }
 
 .leftcolumn h2,
@@ -130,7 +131,7 @@ body {
 }
 
 .rightcolumn {
-    flex: 0 0 48.5%;
+    flex: 0 0 48%;
     margin-top: 10px;
     margin-right: 15px;
     display: flex;
@@ -170,7 +171,7 @@ body {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(15, 15, 15, 0.1);
-    padding: 20px;
+    padding: 15px 20px;
     margin: 10px 0;
     display: flex;
     flex-direction: column;
@@ -190,8 +191,8 @@ body {
 }
 
 .footer {
-    height: 120px;
-    padding: 12px;
+    min-height: 160px;
+    padding: 15px 20px;
     box-sizing: border-box;
     text-align: center;
     background-color: rgb(145, 82, 6);
@@ -203,9 +204,8 @@ body {
     color: rgb(247, 201, 115);
     font-style: oblique;
     font-size: 25px;
-    margin-top: 25px;
-   
-    line-height: 0;
+    margin: 10px 0 5px 0;
+    line-height: 1.1;
 }
 
 .footer p {
@@ -213,8 +213,8 @@ body {
     font-size: 15px;
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
-    margin: 2px 0px;
-    line-height: 0.3;
+    margin: 0 0 5px 0;
+    line-height: 1;
 }
 
 .row::after {
@@ -223,7 +223,7 @@ body {
     clear: both;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
     .leftcolumn .rightcolumn {
         width: 100%;
         padding: 0;
