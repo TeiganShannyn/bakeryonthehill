@@ -35,12 +35,47 @@ body {
 }
 
 .header a {
-    position: relative;
+    position: absolute;
     font-size: 22px;
     font-style: oblique;
     color: rgb(240, 197, 140);
     font-weight: bold;
-    top: 120px;
+    top: 380px;
+}
+
+.header button {
+    position: absolute;
+    font-size: 13px;
+    font-weight: bold;
+    color: rgb(240, 197, 140);
+    background-color: transparent;
+    top: 420px;
+    left: 35px;
+    border-radius: 10px;
+    border: 3px solid brown;
+    cursor: pointer;
+    width: 100px;
+    height: 25px;
+    overflow: hidden;
+    transition: 5s, height 5s;
+}
+
+.header button:hover {
+    background-color: #543a38;
+    width: 300px;
+    height: 75px;
+    text-align: left;
+}
+
+.header button:hover::after {
+    content: "📍Address: 123 Hill Street, Beautiful Town, NY ⏰Hours: Every days from 6:30am to 7pm";
+    position: absolute;
+    font-size: 12px;
+    color: #f5dede;
+    font-style: oblique;
+    top: 10px;
+    margin-right: 5px;
+    text-align: right;
 }
 
 .nav {
@@ -69,10 +104,13 @@ body {
 }
 
 .leftcolumn {
-    flex: 0 0 50%;
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
+    flex: 0 0 48%;
+}
+
+.leftcolumn h2,
+.leftcolumn p {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .leftcolumn .card,
@@ -85,29 +123,37 @@ body {
     height: 120px;
     display: block;
     margin: 0 auto;
+    align-items: center;
 }
 
 .rightcolumn {
-    flex: 0 0 48.5%;
+    flex: 0 0 48%;
     margin-top: 10px;
     margin-right: 15px;
-    display: flex;
-    flex-direction: column;
+}
+
+.rightcolumn h2,
+.rightcolumn p {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .rightcolumn img {
     width: 160px;
     height: 120px;
     display: block;
-    margin: 0 auto;
+    margin: 10px;
+    align-items: center;
 }
 
 .card {
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(15, 15, 15, 0.1);
+    box-shadow: 0 4px 8px rgba(15, 15, 15, 0.1); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
-    margin: 10px 0;
 }
 
 .card button {
@@ -115,8 +161,8 @@ body {
     color: rgb(251, 211, 171);
     font-weight: bold;
     border: none;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s;
+    cursor: pointer; 
+    margin: 10px;
 }
 
 .card button:hover {
@@ -124,36 +170,30 @@ body {
 }
 
 .footer {
-    height: 120px;
-    padding: 2px;
+    min-height: 160px;
+    padding: 15px 20px;
     box-sizing: border-box;
     text-align: center;
-    background-color: rgb(145, 82, 6);
-    margin-top: 0;
+    background-color: rgb(145, 82, 6); 
 }
 
 .footer h4 {
     color: rgb(247, 201, 115);
     font-style: oblique;
     font-size: 25px;
-    margin-bottom: 0px;
+    margin: 10px 0 20px 0;
+    line-height: 1.1;
 }
 
 .footer p {
-    color: rgb(247, 201, 115);
-    font-size: 15;
-    font-weight: bold;
-    margin-bottom: 0px;
-    line-height: 0.6;
+    color: rgb(250, 227, 185);
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0 0 0 0;
+    line-height: 1;
 }
 
-.row::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
     .leftcolumn .rightcolumn {
         width: 100%;
         padding: 0;
@@ -165,5 +205,4 @@ body {
         float: none;
         width: 100%
     }
-    
 }
