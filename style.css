@@ -35,12 +35,12 @@ body {
 }
 
 .header a {
-    position: relative;
+    position: absolute;
     font-size: 22px;
     font-style: oblique;
     color: rgb(240, 197, 140);
     font-weight: bold;
-    top: 95px;
+    top: 380px;
 }
 
 .header button {
@@ -104,10 +104,7 @@ body {
 }
 
 .leftcolumn {
-    flex: 0 0 50%;
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
+    flex: 0 0 48%;
 }
 
 .leftcolumn h2,
@@ -130,43 +127,33 @@ body {
 }
 
 .rightcolumn {
-    flex: 0 0 48.5%;
+    flex: 0 0 48%;
     margin-top: 10px;
     margin-right: 15px;
-    display: flex;
-   
 }
 
-.rightcolumn h3,
+.rightcolumn h2,
 .rightcolumn p {
     color: black;
     font-family: 'Times New Roman', Times, serif;
-}
-
-.leftcolumn p,
-.rightcolumn p {
-    font-size: 18px; 
-    line-height: 1.5; 
 }
 
 .rightcolumn img {
     width: 160px;
     height: 120px;
     display: block;
-    margin: 0 auto;
+    margin: 10px;
     align-items: center;
-
 }
 
 .card {
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(15, 15, 15, 0.1);
-    padding: 20px;
-    margin: 10px 0;
+    box-shadow: 0 4px 8px rgba(15, 15, 15, 0.1); 
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 20px;
 }
 
 .card button {
@@ -175,6 +162,7 @@ body {
     font-weight: bold;
     border: none;
     cursor: pointer; 
+    margin: 10px;
 }
 
 .card button:hover {
@@ -182,40 +170,30 @@ body {
 }
 
 .footer {
-    height: 120px;
-    padding: 12px;
+    min-height: 160px;
+    padding: 15px 20px;
     box-sizing: border-box;
     text-align: center;
-    background-color: rgb(145, 82, 6);
-    
-    
+    background-color: rgb(145, 82, 6); 
 }
 
 .footer h4 {
     color: rgb(247, 201, 115);
     font-style: oblique;
     font-size: 25px;
-    margin-top: 25px;
-   
-    line-height: 0;
+    margin: 10px 0 20px 0;
+    line-height: 1.1;
 }
 
 .footer p {
-    color: rgb(247, 201, 115);
+    color: rgb(250, 227, 185);
     font-size: 15px;
-    font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
-    margin: 2px 0px;
-    line-height: 0.3;
+    margin: 0 0 0 0;
+    line-height: 1;
 }
 
-.row::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
     .leftcolumn .rightcolumn {
         width: 100%;
         padding: 0;
@@ -227,5 +205,4 @@ body {
         float: none;
         width: 100%
     }
-    
 }
