@@ -1,14 +1,16 @@
 .rightcolumn{
     float: left;
-    width: 100%;
-    height: 100%;
+    width: 100px;
+    height: 100px;
+
+    
 }
 .leftcolumn{
     float: left;
     flex-direction: column;
     justify-content: space-evenly;
-    width: 100%;
-    height: 100%;
+    width: 100px;
+    height: 100px;
 }
 * {
     box-sizing: border-box;
@@ -26,12 +28,13 @@
     }
 }
 .one {
-    float: top;
+    float: right;
     justify-content: right;
     flex-direction: column;
 }
 .two {
-    background-color: lightsteelblue;
+    background-color: lightgray;
+
 }
 
     
