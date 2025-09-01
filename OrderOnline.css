@@ -1,40 +1,59 @@
-.rightcolumn{
-    float: left;
-    width: 100px;
-    height: 100px;
-
-    
+.row1 {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 20px;
 }
-.leftcolumn{
-    float: left;
+
+.leftcolumn1, .rightcolumn1 {
+  flex: 1;
+  min-width: 300px;
+  padding: 15px;
+  background-color: #fff8f0;
+}
+
+figure {
+  margin-bottom: 20px;
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="datetime-local"],
+select,
+textarea {
+  margin-bottom: 15px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  background-color: #ff9999;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #ff6666;
+}
+
+@media screen and (max-width: 800px) {
+  .row {
     flex-direction: column;
-    justify-content: space-evenly;
-    width: 100px;
-    height: 100px;
+  }
 }
-* {
-    box-sizing: border-box;
-}
-@media screen and(max-width:800px){
-    .leftcolumn,.rightcolumn{
-    width: 100%;
-    padding: 0px;
-    }
-}
-@media screen and(max-width:400px){
-    .leftcolumn,.rightcolumn{
-        float: none;
-        width: 100%;
-    }
-}
-.one {
-    float: right;
-    justify-content: right;
-    flex-direction: column;
-}
-.two {
-    background-color: lightgray;
-
-}
-
-    

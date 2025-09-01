@@ -1,148 +1,102 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="OrderOnline.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bakery on the Hill</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="OrderOnline.css" />
 </head>
 <body>
     <div class="header">
         <h1>Bakery on the Hill</h1>
         <p>Where Every Bite Feels Like Home</p>
+        <a href="OrderOnline.html">📞Phone: (123) 456-7890</a>
+        <button id="infobutton">More Info</button>
     </div>
-    <div class="nav">
-        <a href="index.html">Home</a>
-        <a href="#">Our Bakes</a>
-        <a href="#">Order on line</a>
-        <a href="#">Contact</a>
-        <a href="#">Testimonials</a>
-    </div>
-    <h1>Ordering Online Is Easy</h1>
-    <p>"We will make ordering your sweet confections streamless"</p>
-    <div class="row">
-        <div>
-        <div class="leftcolumn">
-            <div class="card">
-    <figure>
-        <img src="https://media.istockphoto.com/id/1709722487/photo/homemade-chocolate-chip-cookies.jpg?s=612x612&w=0&k=20&c=gPnRcJAJJSJ89kkLY_ZokNKB5bbZ5sRbs6j4YZefZ64=" alt="image" width="450px">
-        <figcaption>Chocolate Chip Cookies $2.49 each,
-              Box of six $12.00
-        </figcaption>
-    </figure>
-    <figure>
-        <img src="/images/cupcakes-.jpg" alt="cupcakes" width="450px">
-        <figcaption>Chip Muffins $1.79 each,   Box of six $8.75</figcaption>
-    </figure>
-    <figure>
-        <img src="https://cdn.pixabay.com/photo/2018/06/12/22/29/bread-3471667_1280.jpg" alt="image" width="450px">
+  <nav class="nav">
+    <a href="/index.html">Home</a>
+    <a href="/OurBakes.html">Our Bakes</a>
+    <a href="/OrderOnline.html">Order Online</a>
+    <a href="/contact.html">Contact</a>
+    <a href="/testimonials.html">Testimonials</a>
+  </nav>
+
+  <h2>Ordering Online Is Easy</h2>
+  <p>We will make ordering your sweet confections seamless.</p>
+
+  <div class="row1">
+    <div class="leftcolumn1">
+      <figure>
+        <img src="/images/chocolatechipcookiesinatray.jpg" alt="Chocolate Chip Cookies in a Tray">
+        <figcaption>Chocolate Chip Cookies $2.49 each, Box of six $12.00</figcaption>
+      </figure>
+      <figure>
+        <img src="/images/strawberry-cupcakes-with-vanilla-swirl-frosting.jpg" alt="Cupcakes with Vanilla Frosting" />
+        <figcaption>Chip Muffins $1.79 each, Box of six $8.75</figcaption>
+      </figure>
+      <figure>
+        <img src="/images/sourdoughbread.jpg" alt="Sourdough Bread">
         <figcaption>Sourdough Bread $3.50 each</figcaption>
-    </figure>
-    <figure>
-        <img src="https://cdn.pixabay.com/photo/2024/09/01/15/30/fruits-9014359_1280.jpg" alt="image" width="450px">
+      </figure>
+      <figure>
+        <img src="/images/WildBerryTierCake.jpg" alt="Wild Berry Tier Cake" >
         <figcaption>White Berry Tier Cake $45.00</figcaption>
-    </figure>
-    <figure>
-        <img src="https://media.istockphoto.com/id/622431858/photo/traditional-french-crossants.webp?a=1&b=1&s=612x612&w=0&k=20&c=FOg2yF7VVsE_ZOGRBUpA7J9ruzUQslyCU8sma9pLRLs=" alt="image" width="750px">
-        <figcaption>Fluffy Croissants $1.50 each   Box of six $7.00
-    </figcaption>
-    </figure>
+      </figure>
+      <figure>
+        <img src="/images/frenchpastries.jpg"> 
+        <figcaption>Fluffy Croissants $1.50 each, Box of six $7.00</figcaption>
+      </figure>
     </div>
+    <div class="rightcolumn1">
+      <form>
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="fname" />
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lname" />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" />
+
+        <label for="phone">Phone #</label>
+        <input type="tel" id="phone" name="phone" />
+
+        <label for="ourbakes">Choose your item:</label>
+        <select id="ourbakes" name="ourbakes">
+          <option value="cookies">Chocolate Chip Cookies</option>
+          <option value="muffins">Chip Muffins</option>
+          <option value="bread">Sourdough Bread</option>
+          <option value="cake">White Berry Tier Cake</option>
+          <option value="croissants">Croissants</option>
+        </select>
+
+        <p>Would you like Singles or Boxes?</p>
+        <input type="checkbox" id="single" name="quantity" value="Single" />
+        <label for="single">Single</label>
+        <input type="checkbox" id="box" name="quantity" value="Box" />
+        <label for="box">Box</label>
+
+        <label for="pickup">Pickup Date and Time</label>
+        <input type="datetime-local" id="pickup" name="pickup" />
+
+        <p>Or choose delivery:</p>
+        <input type="checkbox" id="ubereats" name="delivery" value="UberEats" />
+        <label for="ubereats">UberEats</label>
+        <input type="checkbox" id="doordash" name="delivery" value="DoorDash" />
+        <label for="doordash">DoorDash</label>
+
+        <label for="comments">Messages for us:</label>
+        <textarea id="comments" name="comments" rows="5" cols="40"></textarea>
+
+        <input type="submit" value="Submit Order" />
+      </form>
     </div>
-    </div>
-    <form>
-        <div class="rightcolumn">
-            <div class="card">
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="fname">
-            <br>
-            <br>
-            <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lname">
-            <br>
-            <br>
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email">
-            <br>
-            <br>
-            <label for="phone#">Phone #</label>
-            <input type="phone#" name="phone#" id="phone#">
-            <br>
-            <br>
-            <label for="ourbakes">Choose what you would like ?</label>
-            <select id="ourbakes" name="ourbakes">
-                <option value="Chocolate chip cookies">Chocolate chip cookies</option>
-                <option value="Chip Muffins">Chip Muffins</option>
-                <option value="Sourdough Bread">Sourdough Bread</option>
-                <option value="White Berry Tier Cake">White Berry Tier Cake</option>
-                <option value="Croissants">Croissants</option>
-                <br>
-                <br>
-            <p>Would you like Singles or Boxes ?</p>
-                <input type="checkbox" id="services1" name="services1" value="Single"></input>
-                <label for="services">Single</label>
-                <input type="checkbox" id="services1" name="services1" value="Box"></input>
-                <label for="services">Box</label>
-                <br>
-                <br>
-            <p>When would you like to pick up your order ?</p>
-            <label for="date and time">Date and Time :</label>
-            <input type="date and time" name="date and time" id=" date and time">
-            <p>Or</p>
-            <input type="checkbox" id="services1" name="services1" value="UberEats">
-            <label for="services">UberEats</label>
-            <input type="checkbox" id="services1" name="services1" value="DoorDash">
-            <label for="services">DoorDash</label>
-                </select>
-            <br>
-            <br>
-                <label for="comments">Messages for us :</label>
-                <textarea id="comments" name="user_comments" rows="9" cols="45"></textarea>
-                <br>
-                <br>
-                <input type="submit" value="submit"></input>
-            </form>
-            <br>
-            <br>
-            </div>
-            </div>
-            </div>
-            <div class="one">
-             <img src="/images/White Box.png" alt="images" width="250px">
-             </div>
-    <div class="two">
-    <p>Payment Type :</p>
-    <img src="/images/Wallet.webp" alt="image" width="100px">
-    <input type="checkbox" id="services1" name="services1" value="Visa">
-    <label for="services">VISA</label>
-    <input type="checkbox" id="services1" name="services1" value="Mastercard">
-    <label for="services">MASTERCARD</label>
-    <input type="checkbox" id="services1" name="services1" value="Venmo">
-    <label for="services">VENMO</label>
-    <br>
-    <br>
-    <div class="three">
-    <label for="cc#">Credit Card #</label>
-    <input type="text" id="cc#" name="cc#">
-    <br>
-    <br>
-    <label for="exdate">Expiration Date</label>
-    <input type="text" id="exdate" name="exdate">
-    <br>
-    <br>
-    <label for="secode">Security Code</label>
-    <input type="text" id="secode" name="secode">
-    <br>
-    <br>
-    <input type="submit payment" value="Submit Payment">
-<p>Thank You So Much !</p>
-</div>
-<div class="footer">
+  </div>
+    <div class="footer">
         <h4>Bakery on the Hill</h4>
         <p>Cozy, delicious, and made with love in Upstate NY. A place to gather, relax, and enjoy fresh bakes with family and friends.</p>
         <p>📞Phone: (123) 456-7890   📍Address: 123  Hill Street, Beautiful Town, NY</p>
-</div>
-
+    </div>
 </body>
 </html>
