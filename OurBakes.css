@@ -9,7 +9,7 @@ h1{
 }
     
 .quote1 {
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Times New Roman', Times, serif;
     text-align: center;
     font-size: large;
     padding: 25px;
@@ -81,13 +81,10 @@ div.bake-item {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
     background-color: #f9f3f3;
 }
-.leftcolumn.2{
+.leftcolumn2 {
     float: right;
     justify-content: space-between;
     margin-top: 20px;
     margin-bottom: 20px;
 }
-
-
-
 /*footer.css*/
